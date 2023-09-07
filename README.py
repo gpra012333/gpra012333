@@ -1,10 +1,12 @@
-- 👋 Hi, I’m @gpra012333
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+grade = input("Enter Grade(A/B) : ");
+if(grade == "A" or grade == "a"):
+    basic = 10000
+    allow = 1700
+else:
+    basic = 4567
+    allow = 1500
+HRA = basic/5
+DA = basic/2
+PF = 0.11*basic
 
-<!---
-gpra012333/gpra012333 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+print("Gross salary = {}".format(basic+HRA+DA+allow-PF))
